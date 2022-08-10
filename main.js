@@ -1,6 +1,5 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -8,5 +7,11 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+const inputs = document.querySelectorAll('.controls input');
+function handleUpdate(){
+  console.log(this.value)
+}
 
-setupCounter(document.querySelector('#counter'))
+inputs.forEach(input => input.addEventListener('change', handleUpdate));
+
+

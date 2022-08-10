@@ -13,14 +13,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --base: #7fffd4;
+  --base: #000080;
   --spacing: 10px;
   --blur: 10px;
 }
 
 img{
   padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
 
+.hl{
+  color: var(--base);
 }
 
 
