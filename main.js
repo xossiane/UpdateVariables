@@ -8,6 +8,7 @@ function handleUpdate(){
   const suffix = this.dataset.sizing || '';
   document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
   console.log(this.name)
+  console.log(this.value)
 }
 
 inputs.forEach(input => input.addEventListener('change', handleUpdate));

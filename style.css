@@ -16,6 +16,7 @@
   --base: #000080;
   --spacing: 10px;
   --blur: 10px;
+  --border: 10px;
 }
 
 img{
@@ -23,6 +24,7 @@ img{
   background: var(--base);
   filter: blur(var(--blur));
   margin-top: 30px;
+  border-radius: var(--border);
 }
 
 .hl{
